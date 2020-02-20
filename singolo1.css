@@ -47,8 +47,28 @@ header{
     border-bottom: 6px solid #323746;
 }
 .slider{
+    padding:53px 40px 61px 40px;
     background-color: #f06c64;
     border-bottom: 15px solid #ea676b;
+}
+.phones{
+    display: grid;
+    height: 480px;
+    grid-template-columns: repeat(12,1fr);
+}
+.verticalIPhone{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    width: 240px;
+    height: 484px;
+    background: url("assets/iPhone-Vertical.png");
+}
+.horizontalIPhone{
+    grid-column-start: 6;
+    grid-column-end: 12;
+    width: 240px;
+    height: 484px;
+    background: url("assets/iPhone Horizontal.png");
 }
 footer{
     background-color: #f2f2f2;
