@@ -46,7 +46,7 @@ h1{
     font-weight: 900;
     text-align: left;
 }
-.portfolio p{
+p{
     width: 940px;
     height: 41.1px;
     margin-top: 15.5px;
@@ -60,14 +60,21 @@ h1{
 }
 .buttons{
     height: 23.5px;
-    margin-top: 0.1px;
 }
 .buttons div{
     display: flex;
-    float:left;
+    float: left;
+    margin-right: 9px;
+    margin-left: 1px;
+    height: 20px;
     border-radius: 5px;
     /*background-color: #0f0f0f;*/
     border: 1px solid #666d89;
+}
+.buttons div:hover{
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
 }
 .buttons div a{
     font-size: 12px;
@@ -80,20 +87,20 @@ h1{
     text-decoration: none;
     position: relative;
 }
+.buttons div a:hover{
+    color: white;
+}
 .all a{
-    width: 29px;
+    width: 27px;
 }
 .webDesign a{
-    width: 78px;
-    margin-left: 8px;
+    width: 76px;
 }
 .graphicDesign a{
-    width: 92px;
-    margin-left: 8px;
+    width: 91px;
 }
 .artwork a{
-    width: 57px;
-    margin-left: 8px;
+    width: 55px;
 }
 .pictures{
     display: grid;
@@ -164,4 +171,74 @@ background-size: cover;
     grid-column-start: 4/5;
     grid-row: 3/4;
     background: url("assets/pic12.png");
+}
+.aboutUs{
+    padding: 68px 40px 40px 40px;
+    height: 620px;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
+}
+.gridAboutUs{
+    display: grid;
+    height: 500px;
+    margin-top: 63px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows:300px repeat(2,100px);
+    grid-column-gap: 20px;
+}
+.gridAboutUs div:nth-child(1){
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background: url("assets/Jensen1.png");
+}
+.gridAboutUs div:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background: url("assets/Miles2.png");
+}
+.gridAboutUs div:nth-child(3){
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background: url("assets/Visari3.png");
+}
+.gridAboutUs div:nth-child(4){
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.gridAboutUs div:nth-child(5){
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.gridAboutUs div:nth-child(6){
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.aboutPeople{
+    margin-top: 17px;
+}
+.aboutPeople h2{
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+}
+.aboutPeople p{
+    width: 300px;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+.gridAboutUs div:nth-child(7){
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background: url("assets/facebook.png") repeat-y no-repeat,
+                url("assets/google.png") 16% 0 repeat-y,
+                url("assets/twitter.png") 32% 0 repeat-y,
+                url("assets/linkedin.png") 48% 0 repeat-y;
 }
