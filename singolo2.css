@@ -234,11 +234,30 @@ background-size: cover;
     font-weight: 400;
     text-align: left;
 }
-.gridAboutUs div:nth-child(7){
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background: url("assets/facebook.png") repeat-y no-repeat,
-                url("assets/google.png") 16% 0 repeat-y,
-                url("assets/twitter.png") 32% 0 repeat-y,
-                url("assets/linkedin.png") 48% 0 repeat-y;
+.socialNetwork{
+    background: none !important;
+    margin-top: 25px;
+}
+.soc{
+    display: inline-block;
+    margin-right: 4px;
+    height: 32px !important;
+    width: 32px;
+}
+.soc:hover{
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.socialNetwork div:nth-child(1){
+    background: url("assets/facebook.png") no-repeat;
+}
+.socialNetwork div:nth-child(2){
+    background: url("assets/google.png") no-repeat;
+}
+.socialNetwork div:nth-child(3){
+    background: url("assets/twitter.png") no-repeat;
+}
+.socialNetwork div:nth-child(4){
+    background: url("assets/linkedin.png") no-repeat;
 }
