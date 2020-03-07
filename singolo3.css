@@ -49,7 +49,7 @@ main{
     font-weight: 300;
     font-family: "Lato";
     text-align: justify;
-    margin-bottom: 45px;
+    margin-bottom: 44px;
 }
 .formAndInfo{
     display: grid;
@@ -59,7 +59,7 @@ input{
     margin-bottom: 16px;
     padding-left: 15px;
     color: #f48c8f;
-    max-width: 605px;
+    max-width: 604px;
     width: 100%;
     height: 38px;
     border-radius: 5px;
@@ -68,18 +68,19 @@ input{
 }
 input::placeholder,textarea::placeholder{
     color: #f48c8f;
-    font-weight: 300;
+    font-size: 12px;
+    font-weight: 400;
     font-family: "Lato";
 }
 textarea{
     width: 100%;
-    max-width: 605px;
-    height: 192px;
+    max-width: 604px;
+    height: 193px;
     border-radius: 5px;
     background-color: #d6564f;
     border: none;
     padding-left: 15px;
-    padding-top: 11px;
+    padding-top: 9px;
     color: #f48c8f;
     resize: none;
 }
@@ -108,6 +109,8 @@ form{
     font-size: 12px;
     line-height: 22px;
     color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
     margin-bottom: 20px;
 }
 .info ul{

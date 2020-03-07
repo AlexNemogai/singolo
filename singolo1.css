@@ -40,7 +40,7 @@ ul{
     display: flex;
     float: right;
     list-style: none;
-    padding: 0;
+    padding-bottom: 4px;
     justify-content: center;
 }
 ul li{
@@ -65,15 +65,19 @@ ul li a span{
     font-weight: 700;
     
 }
+ul li a:hover,ul li a span:hover{
+    cursor: pointer;
+    color: yellow;
+}
 li::before{
     
     content: '';
     position: absolute;
     left: -15.3px;
     top: 20px;
-    width: 5px;
-    height: 5px;
-    background: yellow;
+    width: 2px;
+    height: 2px;
+    background: rgb(73, 72, 72);
 }
 ul li:first-of-type::before {
     display: none;
@@ -84,7 +88,7 @@ ul li:first-of-type::before {
 header{
     display: grid;
     grid-template-columns: 140px auto;
-    padding: 25.6px 22.9px 30px 41px;
+    padding: 23.6px 22.9px 28px 41px;
     color: white;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
@@ -103,7 +107,7 @@ header{
     grid-column-start: 1;
     grid-column-end: 2;
     margin-top: 228px;
-    margin-left: 3px;
+    margin-left: 2px;
     width: 16px;
     height: 27px;
     background: url("assets/leftArrow.png");
@@ -112,7 +116,7 @@ header{
     grid-column-start: 12;
     grid-column-end: 13;
     margin-top: 228px;
-    margin-left: 55px;
+    margin-left: 62px;
     width: 16px;
     height: 27px;
     background: url("assets/rightArrow.png");
@@ -120,8 +124,9 @@ header{
 .verticalIPhone{
     grid-column-start: 2;
     grid-column-end: 5;
+    margin-top: -1px;
     margin-bottom: 6px;
-    margin-left: 1px;
+    margin-left: -6.5px;
     width: 240px;
     height: 485px;
     background: url("assets/iPhone-Vertical.png");
@@ -130,14 +135,14 @@ header{
     grid-column-start: 6;
     grid-column-end: 12;
     margin-top: 121px;
-    margin-left: 4px;
+    margin-left: -5.8px;
     width: 485px;
     height: 240px;
     background: url("assets/iPhone-horizontal.png");
 }
 .OurServices{
     background-color: #f2f2f2;
-    height: 495px;
+    height: 492px;
     border: 1px solid #f2f2f2;
 }
 .gridServices{
@@ -203,6 +208,9 @@ header{
     grid-column: 10/13;
     grid-row: 6/8;
 }
+.DescriptionOurServices{
+    padding-top: 2px;
+}
 .DescriptionOurServices h2{
     font-size: 30px;
     line-height: 18px;
@@ -231,4 +239,29 @@ header{
     color: #767e9e;
     font-family: 'Lato';
     font-weight: 400;
+    padding-top: 10px;
+}
+.textForPicture2{
+    padding-top: 4px;
+}
+.textForPicture2 h3{
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: 'Lato';
+    font-weight: 900;
+}
+.textForPicture2 p{
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: 'Lato';
+    font-weight: 400;
+    padding-top: 10px;
+}
+.iconPicture1{
+    padding-top: 2px;
+}
+.iconPicture2{
+    padding-top: 5px;
 }
