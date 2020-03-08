@@ -530,6 +530,7 @@ ul li:first-of-type::before {
     font-size: 30px;
     line-height: 18px;
     margin-bottom: 26px;
+    color: #f0d8d9;
     font-weight: 900;
     font-family: "Lato";
 }
