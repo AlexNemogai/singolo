@@ -44,6 +44,10 @@ header{
     position: sticky;
     top: 0 ;
 }
+header.small{
+    padding: 5px 40px 10px 41px;
+    border: none;
+}
 h1{
     font-size: 25px;
     color: #ffffff;
@@ -82,7 +86,7 @@ header ul li a span{
 }
 header ul li a:hover,ul li a span:hover{
     cursor: pointer;
-    color: yellow;
+    color: grey;
 }
 li::before{
     
@@ -281,7 +285,17 @@ ul li:first-of-type::before {
     padding-top: 5px;
 }
 /*****************portfolio************************/
-
+.portfolio .active{
+    color: white;
+}
+.pictures :nth-child(n+13){
+    display: none;
+}
+.border-frame{
+    border: 5px solid white;
+    width: inherit;
+    background-position: -5px -5px !important;
+}
 .portfolio{
     padding: 68px 40px 40px 40px;
     height: 756px;
